@@ -1,0 +1,420 @@
+<html>
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<title>Auswahlleiste</title>
+<base target="Auswahlleiste">
+<script language="JavaScript">
+<!--
+function namosw_init_clock()
+{
+  var type, i, top, obj, clocks;
+  clocks = new Array();
+  for (i = 0, top = 0; i < namosw_init_clock.arguments.length; i += 2) {
+    obj = eval('document.'+namosw_init_clock.arguments[i]);
+    if (obj == null) continue;
+    if ((type = namosw_init_clock.arguments[i+1]) < 1 && 11 < type) continue;
+    clocks[top++] = obj;
+    clocks[top++] = type;
+  }
+  clocks.months = new Array('Januar', 'Februar', 'M?z', 'April', 'Mai', 'Juni', 'Juli',
+                            'August', 'September', 'Oktober', 'November', 'Dezember');
+  clocks.days   = new Array('Sonntag', 'Montag', 'Dienstag', 'Mittwoch',
+                            'Donnerstag', 'Freitag', 'Samstag');
+  clocks.ampm_str   = new Array('AM', 'PM');
+  
+  if (top > 0) {
+    document.namosw_clocks = clocks;
+    namosw_clock();
+  }
+}
+
+function namosw_clock()
+{
+  var i, type, clocks, next_call, str, hour, ampm, now, year2, year4;
+  clocks = document.namosw_clocks;
+  if (clocks == null) return;
+  next_call = false;
+  for (i = 0; i < clocks.length; i += 2) {
+    obj   = clocks[i];
+    type  = clocks[i+1];
+    now   = new Date();
+    year2 = now.getYear();
+    year4 = year2;
+    if (year2 < 1000) year4 = 1900 + year2;
+    if (year2 >= 100) year2 = year4;
+
+    if (type == 1 || type == 2) {
+      obj.value =  now.getDate() + '. ' + clocks.months[now.getMonth()] + ' ' + year4;
+      if (type == 2) 
+        obj.value = clocks.days[now.getDay()] + ', ' + obj.value;
+    } else if (type == 3 || type == 4) {
+      obj.value = now.getDate() + '. ' + (now.getMonth()+1) + '. ' + year2;
+    } else if (type == 5 || type == 6) {
+      obj.value = now.getDate() + '/' + (now.getMonth()+1) + '/' + year2;
+    } else if (type == 8 || type == 9 || type == 10 || type == 11) {
+      obj.value = year4 + '³â ' + (now.getMonth()+1) + '¿ù ' + now.getDate() + 'ÀÏ';
+      if (type == 9)
+        obj.value += ' ' + clocks.k_days[now.getDay()] + '¿äÀÏ';
+    }
+    if (type == 4 || type == 6 || type == 7 || type == 10 || type == 11) {
+      hour = now.getHours();
+      ampm = 0;
+
+      if (type == 10 || type == 11) {
+	    str = clocks.k_ampm_str[ampm] +' '+ hour+'½Ã '+ now.getMinutes() +'ºÐ';
+	    if (type == 11) str += ' ' + now.getSeconds() +'ÃÊ';
+        } 
+		else {
+	      str = hour +':'+ ((now.getMinutes() < 10) ? '0'+now.getMinutes():now.getMinutes()) +':'+ ((now.getSeconds() < 10) ? '0'+now.getSeconds():now.getSeconds());
+        }
+      if (type == 7) obj.value  = str;
+      else           obj.value += ' ' + str;
+    }
+    if (type == 4 || type == 6 || type == 7 || type == 10 || type == 11)
+      next_call = true;
+  }
+  if (next_call)
+    window.setTimeout("namosw_clock();", 1000);
+}
+
+function namosw_fade_background(r1, g1, b1, r2, g2, b2, maxstep) 
+{
+  var i, r, g, b;
+  for (i = 0; i <= maxstep; i++) {
+    r = Math.floor((r1*(maxstep-i) + r2*i)/maxstep);
+    g = Math.floor((g1*(maxstep-i) + g2*i)/maxstep);
+    b = Math.floor((b1*(maxstep-i) + b2*i)/maxstep);
+    namosw_fade_setbgcolor(r, g, b)
+  }
+}
+
+function namosw_fade_setbgcolor() 
+{
+  var hexchars = '0123456789abcdef';
+  var i;
+  var color_str = '#';
+  var args = namosw_fade_setbgcolor.arguments;
+  if (args.length != 3)
+    return;
+  for (i = 0; i < 3; i++) {
+    color_str += hexchars.charAt(Math.floor(args[i]/16));
+    color_str += hexchars.charAt(args[i]%16);
+  }
+  document.bgColor = color_str;
+}
+
+// -->
+</script>
+<script language="JavaScript">
+<!--
+function na_change_img_src(name, nsdoc, rpath, preload)
+{ 
+  var img = eval((navigator.appName.indexOf('Netscape', 0) != -1) ? nsdoc+'.'+name : 'document.all.'+name);
+  if (name == '')
+    return;
+  if (img) {
+    img.altsrc = img.src;
+    img.src    = rpath;
+  } 
+}
+
+function na_restore_img_src(name, nsdoc)
+{
+  var img = eval((navigator.appName.indexOf('Netscape', 0) != -1) ? nsdoc+'.'+name : 'document.all.'+name);
+  if (name == '')
+    return;
+  if (img && img.altsrc) {
+    img.src    = img.altsrc;
+    img.altsrc = null;
+  } 
+}
+
+function na_preload_img()
+{ 
+  var img_list = na_preload_img.arguments;
+  if (document.preloadlist == null) 
+    document.preloadlist = new Array();
+  var top = document.preloadlist.length;
+  for (var i=0; i < img_list.length; i++) {
+    document.preloadlist[top+i]     = new Image;
+    document.preloadlist[top+i].src = img_list[i+1];
+  } 
+}
+
+// -->
+</script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="purple" alink="red" background="dark40_b.gif" OnLoad=" namosw_init_clock('form1.textclock1', 4); namosw_fade_background(0, 0, 0, 255, 255, 255, 1);na_preload_img(false, 'images/image_htm_smartbutton4.gif', 'images/image_htm_smartbutton1.gif', 'images/image_htm_smartbutton2.gif', 'images/image_htm_smartbutton3.gif', 'images/image_htm_smartbutton5.gif');">
+<form name="form1">
+    <p><input type="text" name="textclock1" size="20"></p>
+</form>
+<p>&nbsp;<img src="heads3.gif" width="129" height="93" border="0"></p>
+<p style="text-indent:0mm; line-height:7mm; margin-top:0mm; margin-bottom:0mm;"><span style="font-size:20pt;"><font face="Arial Black"><a href="Home-Inhalt.htm" OnMouseOut="na_restore_img_src('image1', 'document')" OnMouseOver="na_change_img_src('image1', 'document', 'images/image_htm_smartbutton4.gif', true)" target="Inhalt"><img src="images/Heads-Home_htm_smartbutton1.gif" namo_npi=":EmbededNPI1" border="0" name="image1"></a></font></span></p>
+<p style="text-indent:0mm; line-height:7mm; margin-top:0mm; margin-bottom:0mm;">&nbsp;</p>
+<p style="text-indent:0mm; line-height:7mm; margin-top:0mm; margin-bottom:0mm;"><span style="font-size:20pt;"><font face="Arial Black"><a href="Ueber%20uns.htm" OnMouseOut="na_restore_img_src('image2', 'document')" OnMouseOver="na_change_img_src('image2', 'document', 'images/image_htm_smartbutton1.gif', true)" target="Inhalt"><img src="images/Heads-Home_htm_smartbutton2.gif" namo_npi=":EmbededNPI2" border="0" name="image2"></a></font></span></p>
+<p style="text-indent:0mm; line-height:7mm; margin-top:0mm; margin-bottom:0mm;">&nbsp;</p>
+<p style="text-indent:0mm; line-height:7mm; margin-top:0mm; margin-bottom:0mm;"><span style="font-size:20pt;"><font face="Arial Black"><a href="Services.htm" OnMouseOut="na_restore_img_src('image3', 'document')" OnMouseOver="na_change_img_src('image3', 'document', 'images/image_htm_smartbutton2.gif', true)" target="Inhalt"><img src="images/Heads-Home_htm_smartbutton3.gif" namo_npi=":EmbededNPI3" border="0" name="image3"></a></font></span></p>
+<p style="line-height:7mm; margin-top:0; margin-bottom:0;"><font face="Arial Black">&nbsp;</font></p>
+<p style="text-indent:0mm; line-height:7mm; margin-top:0mm; margin-bottom:0mm;"><span style="font-size:20pt;"><font face="Arial Black"><a href="Kundenliste.htm" OnMouseOut="na_restore_img_src('image5', 'document')" OnMouseOver="na_change_img_src('image5', 'document', 'images/image_htm_smartbutton3.gif', true)" target="Inhalt"><img src="images/Heads-Home_htm_smartbutton4.gif" namo_npi=":EmbededNPI4" border="0" name="image5"></a></font></span></p>
+<p style="text-indent:0mm; line-height:7mm; margin-top:0mm; margin-bottom:0mm;">&nbsp;</p>
+<p style="text-indent:0mm; line-height:7mm; margin-top:0mm; margin-bottom:0mm;"><span style="font-size:20pt;"><font face="Arial Black"><a href="Kontakt.htm" OnMouseOut="na_restore_img_src('image4', 'document')" OnMouseOver="na_change_img_src('image4', 'document', 'images/image_htm_smartbutton5.gif', true)" target="Inhalt"><img src="images/Heads-Home_htm_smartbutton5.gif" namo_npi=":EmbededNPI5" border="0" name="image4"></a></font></span></p>
+
+
+
+</body>
+
+<!--Namo WebEditor Data 4.0
+:EmbededNPI1
+pgoAAHhecwny92JkYGa4ysDAoA/EpYwMDClAGkgx/P//HygDYsFki4GcRCAfBJiheMWKFWA+
+E1QcpAsGkpKS4GxaMhgZtoCcCQQg+gAtrRpSZl9gWszAC3QxCI8C6oYAapiyIBkOYgsBs0El
+EEOTJcMJoBiyOLqaCmD2waYGZizIHJAaEMBlFyhHItt7F8i3AOJcoOZwNM+HeTiCRWC5tqEB
+kWuRczB1wwzVNEaGE0CXCQAFQfQMWlo1pMxWGM21NIsv/LlWDZj01yLl2hpoboOJg3IeshoH
+YPbBpgY514LUYMu1MHNAuRaZ/R7ItwJiYLXMEAY1CJT7YSUJiIblWoaGBnhI0S/XSgCdvAFo
+L4j2oFlMDTWDFRQUPPJzUxkYNFwyU/OKS3JSM4tLSvPSU/M0h5pXyHKvY1FmYo6CU05icjZZ
++tE18SOleQCB3oTB
+-->
+<!--Namo WebEditor Data 4.0
+:EmbededNPI2
+PhUAAHhecwny92JkYGG4ysDAoA/EpYwMDClAGkihYCAXDEDi////Z2AGs2C6ioGcRJiSUXpE
+hwAo9SAAKJWw0CU8QDZBQAUTA8MJutg5+C0BBgU4v0JAUlISTZzMxLAFGvwg+gBN7BiKhrIw
+tINDnxFYXjKA8YoVK4CkQeBWBl4gDcKjgHohkJANCVcEQC57QGwhYHRUAjGstACVE8ji6Gpg
+ZQm6GpgNIHNAakAAl12geEe29y6QbwHEuUDN4dTz/KhJQzgEBr7WdACm4pohHILUdDooQzc0
+wGpNRP1JTTsYGJgYTgBLAAGgoSB6BnUNH8KmwWpNhBfCPBxBMRIwWmvSIlofpBOqNdWAWWAt
+Uq0JKidAtR1MHJkNqhFhZQm6GuRaE6QGW60JMxNUayKzHwP5VtBaM4wWwTBq5pALgYGvNZcA
+k3vBkAs32jgYnKEbGqCG067WlAAWDRuAtoBoD9p4ZQiaiuhrwsbuQJ5gZAjPyFcoT1VILEpl
+yEzNKy7JSc0sLinNS0/N0xyCviTdyY5FmYk5Ck45icnZpGvGooMfHKrAUY60rQwA/KOa0g==
+-->
+<!--Namo WebEditor Data 4.0
+:EmbededNPI3
+pgoAAHhecwny92JkYGa4ysDAoA/EpYwMDClAGkgx/P//HygDYsFki4GcRCAfBJiheMWKFWA+
+E1QcpAsGkpKS4GxaMhgZtoCcCQQg+gAtrRpSZhsILmbgBboYhEcBdUMANUxZkAwHsYWA2aAS
+iKHJkuEEUAxZHF1NBTD7YFMDMxZkDkgNCOCyC5Qjke29C+RbAHEuUHM4mufDPBzBIrBc29CA
+yLXIOZi6YYZqGiPDCaDLBICCIHoGLa0aUmY3CIzmWlpFGP5cqwZM+muRcm0NNLfBxEE5D1mN
+AzD7YFODnGtBarDlWpg5oFyLzH4P5FsBcQgwT4RBDQLlflhJAqJhuZahoQEeUPTLtRJAJ28A
+2guiPWgVUUPO3ODUorLM5NRiBg2XzNS84pKc1MziktK89NQ8zSHnF3Ic7FiUmZij4JSTmJxN
+jnYMPfxIaR4AqASGAw==
+-->
+<!--Namo WebEditor Data 4.0
+:EmbededNPI4
+PhUAAHhecwny92JkYGG4ysDAoA/EpYwMDClAGkihYCAXDEDi////Z2AGs2C6ioGcRJiSUXpE
+hwAo9SAAKJWw0CU8QDZBQAUTA8MJutg5+C0BBgU4v0JAUlISTZzMxLAFGvwg+gBN7BiKhrIw
+tINDnxFYXjKA8YoVK4Ckwc6tDLxAGoRHAfVC4MFmSLgiAHLZA2ILAaOjEohhpQWonEAWR1cD
+K0vQ1cBsAJkDUgMCuOwCxTuyvXeBfAsgzgVqDqee50dNGsIhMPC1pgMwFdcM4RCkptNBGbqh
+AVZrIupPatrBwMDEcAJYAggADQXRM6hr+BA2DVZrIrwQ5uEIipEdo7UmLaL1wAZCtaYaMAus
+Rao1QeUEqLaDiSOzQTUirCxBV4Nca4LUYKs1YWaCak1k9nMg3wqIU4EWhNEiGEbNHHIhMPC1
+pggwFRcMuXCjjYPBGbqhAWo47WpNCWDRsAFoC4j2oI1XhqCpiL4mbOwO5AlGhqDUtNSi1Lzk
+1GKGzNS84pKc1MziktK89NQ8zSHoS9Kd7FiUmZij4JSTmJxNumYsOvjBocrAsODkVgYAp++c
+ww==
+-->
+<!--Namo WebEditor Data 4.0
+:EmbededNPI5
+PhUAAHhecwny92JkYGG4ysDAoA/EpYwMDClAGkihYCAXDEDi////Z2AGs2C6ioGcRJiSUXpE
+hwAo9SAAKJWw0CU8QDZBQAUTA8MJutg5+C0BBgU4v0JAUlISTZzMxLAFGvwg+gBN7BiKhrIw
+tINDnxFYXjKA8YoVK4BkQ/Vydl4gDcKjgHohsCBsK1qYIpc9ILYQMDoqgRhWWoDKCWRxdDWw
+sgRdDczNIHNAakAAl12geEe29y6QbwHEuUDN4dTz/KhJQzgEBr7WdACm4pohHILUdDooQzc0
+wGpNRP1JTTsYGJgYTgBLAAGgoSB6BnUNH8KmwWpNhBfCPByBnAtVo7UmLaJVIIRQrakGzAJr
+kWpNUDkBqu1g4shsUI0IK0vQ1SDXmiA12GpNmJmgWhOZ/R7ItwJid6AFYbQIhlEzh1wIDHyt
+WQNMjQVDLtxo42Bwhm5ogBpOu1pTAlg0bADaAqI9aOOVIWgqoq8JG7sDeYKRwTk/ryQxuYSB
+QcMlMzWvuCQnNbO4pDQvPTVPcwj6knQnOxZlJuYoOOUkJmeTrhmLDn5wqAJbIwZbGQBGSppO
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

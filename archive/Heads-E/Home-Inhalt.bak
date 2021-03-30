@@ -1,0 +1,44 @@
+<html>
+
+<head>
+<meta http-equiv="Site-Enter" content="revealTrans(Duration=1,Transition=12)">
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<title>Inhalt1</title>
+<base target="Inhalt">
+<script language="JavaScript">
+<!--
+function namosw_scrollstatus()
+{
+  var str = '';
+  if (namosw_scrollstatus.arguments.length > 0) {
+    var i;
+    for (str = '', i = 0; i < 100; i++)
+      str += ' ';
+    for (i = 0; i < namosw_scrollstatus.arguments.length; i++)
+      str += namosw_scrollstatus.arguments[i] + ' ';
+    document.namosw_scrollstatus = str;
+  } else {
+    var src_str = document.namosw_scrollstatus;
+    str  = src_str.substring(1, src_str.length);
+    str += src_str.substring(0, 1);
+    document.namosw_scrollstatus = str;
+  }
+  window.status = str;
+  setTimeout('namosw_scrollstatus()', 100);
+}
+
+// -->
+</script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="purple" alink="red" background="paper14.gif" OnLoad="namosw_scrollstatus('Welcome at www.heads-online.com ! ', 'HEADS Haase Electronics And Digital Systems ', 'Welcome at www.heads-online.com !')">
+<p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Arial" size="3"><b>We 
+can help you with the solution of all tasks and&nbsp;problems concerning methods 
+and procedures as </b></font></p>
+<p style="line-height:130%; margin-top:0; margin-bottom:0;"><font face="Arial" size="3"><b>described 
+under &nbsp;Services.</b></font></p>
+<p>Our guidelines are the international Standards ISO 9001:2000, CMM and EFQM.</p>
+<p><img src="ASrefresher2000_Auszug2-V1_0.gif" width="959" height="719" border="0"></p>
+</body>
+
+</html>

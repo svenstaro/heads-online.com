@@ -1,0 +1,456 @@
+<html>
+
+<head>
+<meta http-equiv="Page-Enter" content="revealTrans(Duration=0,Transition=0)">
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<title>kundenliste</title>
+<meta name="generator" content="Namo WebEditor v5.0">
+</head>
+
+<body bgcolor="white" text="blue" link="blue" vlink="purple" alink="red" background="paper14.gif">
+<p><b><font face="Arial" color="black"><span style="font-size:12pt;">Alphabetisches 
+Verzeichnis 
+(Auszug) unserer Kunden</span></font></b></p>
+<table border="1" cellspacing="0" bordercolordark="black" bordercolorlight="black">
+    <tr>
+        <td width="200">
+            <p><font face="Arial" color="black"><b>Kunde</b></font></p>
+        </td>
+        <td width="150">
+            <p><font face="Arial" color="black"><b>Tätigkeitsorte</b></font></p>
+        </td>
+        <td width="550">
+            <p><font face="Arial" color="black"><b>Ausgeführte Aufgabe</b></font></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="200">
+            <p><font face="Arial"><span style="font-size:12pt;">Apple Computer 
+            GmbH</span></font></p>
+        </td>
+        <td width="150">
+            <p><font face="Arial"><span style="font-size:12pt;">Hamburg</span></font></p>
+        </td>
+        <td width="550">
+            <p><font face="Arial"><span style="font-size:12pt;">Handbuch-Übersetzungen, 
+            Programmierung</span></font></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="200">
+            <p><font face="Arial"><span style="font-size:12pt;">Arko GmbH</span></font></p>
+        </td>
+        <td width="150">
+            <p><font face="Arial"><span style="font-size:12pt;">Wahlstedt</span></font></p>
+        </td>
+        <td width="550">
+            <p><font face="Arial"><span style="font-size:12pt;">Strategische 
+            und technische Beratung, Konzepterstellung</span></font></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="200" height="27">
+            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Arial"><span style="font-size:12pt;">BHS oHG 
+            </span></font></p>
+            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Arial"><span style="font-size:12pt;">(Bankgesellschaft 
+            Berlin)</span></font></p>
+        </td>
+        <td width="150" height="27">
+            <p><font face="Arial"><span style="font-size:12pt;">Berlin</span></font></p>
+        </td>
+        <td width="550" height="27">
+            <p><font face="Arial"><span style="font-size:12pt;">Strategische 
+            Beratung und Konzepterstellung für Workflow-Management und 
+            Projektorganisation</span></font></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="200">
+            <p><font face="Arial"><span style="font-size:12pt;">BP AG</span></font></p>
+        </td>
+        <td width="150">
+            <p><font face="Arial"><span style="font-size:12pt;">Hamburg, London, 
+            Amsterdam</span></font></p>
+        </td>
+        <td width="550">
+            <p><font face="Arial"><span style="font-size:12pt;">Systemanalyse, 
+            Qualitätssicherung, System Management</span></font></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="200">
+            <p><font face="Arial"><span style="font-size:12pt;">Canon-Rechner 
+            GmbH</span></font></p>
+        </td>
+        <td width="150">
+            <p><font face="Arial"><span style="font-size:12pt;">Hamburg, München</span></font></p>
+        </td>
+        <td width="550">
+            <p><font face="Arial"><span style="font-size:12pt;">Systemanalyse, 
+            Programmierung, Anwendungsberatung</span></font></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="200">
+            <p><font face="Arial"><span style="font-size:12pt;">Computer Partner 
+            GmbH</span></font></p>
+        </td>
+        <td width="150">
+            <p><font face="Arial"><span style="font-size:12pt;">Hamburg</span></font></p>
+        </td>
+        <td width="550">
+            <p><font face="Arial"><span style="font-size:12pt;">Leiter der Softwareentwicklung</span></font></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="200">
+            <p><font face="Arial"><span style="font-size:12pt;">CPM GmbH</span></font></p>
+        </td>
+        <td width="150">
+            <p><font face="Arial"><span style="font-size:12pt;">Hamburg, München</span></font></p>
+        </td>
+        <td width="550">
+            <p><font face="Arial"><span style="font-size:12pt;">Krisenmanagement, 
+            Strategieentwicklung, Konzepterstellung</span></font></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="200">
+            <p><font face="Arial"><span style="font-size:12pt;">DAK</span></font></p>
+        </td>
+        <td width="150">
+            <p><font face="Arial"><span style="font-size:12pt;">Hamburg</span></font></p>
+        </td>
+        <td width="550">
+            <p><font face="Arial"><span style="font-size:12pt;">Systemanalyse, 
+            Softwareentwicklung</span></font></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="200">
+            <p><font face="Arial"><span style="font-size:12pt;">DeTeCSM GmbH</span></font></p>
+        </td>
+        <td width="150">
+            <p><font face="Arial"><span style="font-size:12pt;">Darmstadt</span></font></p>
+        </td>
+        <td width="550">
+            <p><font face="Arial"><span style="font-size:12pt;">Teilprojektleitung, 
+            Konzepterstellung, Strategische Beratung, Qualitätsmanagement</span></font></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="200">
+            <p><font face="Arial"><span style="font-size:12pt;">Deutsche Bank 
+            AG</span></font></p>
+        </td>
+        <td width="150">
+            <p><font face="Arial"><span style="font-size:12pt;">Eschborn</span></font></p>
+        </td>
+        <td width="550">
+            <p><font face="Arial"><span style="font-size:12pt;">Softwareentwicklung, 
+            Systemanalyse, Konzepterstellung</span></font></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="200">
+            <p><font face="Arial"><span style="font-size:12pt;">Diehl GmbH</span></font></p>
+        </td>
+        <td width="150">
+            <p><font face="Arial"><span style="font-size:12pt;">Röthenbach</span></font></p>
+        </td>
+        <td width="550">
+            <p><font face="Arial"><span style="font-size:12pt;">Qualitätssicherung, 
+            Konzepterstellung</span></font></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="200">
+            <p><font face="Arial"><span style="font-size:12pt;">Dresdner Bank 
+            AG</span></font></p>
+        </td>
+        <td width="150">
+            <p><font face="Arial"><span style="font-size:12pt;">Frankfurt/M.</span></font></p>
+        </td>
+        <td width="550">
+            <p><font face="Arial"><span style="font-size:12pt;">Leitung des 
+            System- und Applikationstests, Systemanalyse, Strategieberatung, 
+            Konzepterstellung, Qualitätssicherung</span></font></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="200">
+            <p><font face="Arial"><span style="font-size:12pt;">Kurt Eichweber</span></font></p>
+        </td>
+        <td width="150">
+            <p><font face="Arial"><span style="font-size:12pt;">Hamburg</span></font></p>
+        </td>
+        <td width="550">
+            <p><font face="Arial"><span style="font-size:12pt;">Softwareentwicklung</span></font></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="200">
+            <p><font face="Arial">Harman Becker</font></p>
+        </td>
+        <td width="150">
+            <p><font face="Arial">Karlsbad</font></p>
+        </td>
+        <td width="550">
+            <p><font face="Arial">Requirements Engineer, Prozeß-Coach, CMMI-Einführung</font></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="200">
+            <p><font face="Arial"><span style="font-size:12pt;">Hella KGaA</span></font></p>
+        </td>
+        <td width="150">
+            <p><font face="Arial"><span style="font-size:12pt;">Lippstadt</span></font></p>
+        </td>
+        <td width="550">
+            <p><font face="Arial">SPICE Berater, Qualitätsberater, Coach</font></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="200">
+            <p><font face="Arial"><span style="font-size:12pt;">Itergo GmbH</span></font></p>
+        </td>
+        <td width="150">
+            <p><font face="Arial"><span style="font-size:12pt;">Düsseldorf, 
+            Köln, Hamburg</span></font></p>
+        </td>
+        <td width="550">
+            <p><font face="Arial"><span style="font-size:12pt;">Erstellung des 
+            Software Configuration Management Konzepts</span></font></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="200">
+            <p><font face="Arial"><span style="font-size:12pt;">Langnese-Iglo</span></font></p>
+        </td>
+        <td width="150">
+            <p><font face="Arial"><span style="font-size:12pt;">Hamburg</span></font></p>
+        </td>
+        <td width="550">
+            <p><font face="Arial"><span style="font-size:12pt;">Erstellung einer 
+            Controlling-Applikation mit Lotus Notes</span></font></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="200">
+            <p><font face="Arial"><span style="font-size:12pt;">LSG (Lufthansa) 
+            GmbH</span></font></p>
+        </td>
+        <td width="150">
+            <p><font face="Arial"><span style="font-size:12pt;">Neu-Isenburg</span></font></p>
+        </td>
+        <td width="550">
+            <p><font face="Arial"><span style="font-size:12pt;">Erstellung einer 
+            Controlling-Applikation mit PowerBuilder</span></font></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="200">
+            <p><font face="Arial"><span style="font-size:12pt;">MobilCom AG</span></font></p>
+        </td>
+        <td width="150">
+            <p><font face="Arial"><span style="font-size:12pt;">Büdelsdorf</span></font></p>
+        </td>
+        <td width="550">
+            <p><font face="Arial"><span style="font-size:12pt;">Erstellung und 
+            Implementierung des Software Configuration Management Konzepts, 
+            Strategische Beratung, Management-Beratung</span></font></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="200">
+            <p><font face="Arial">O2</font></p>
+        </td>
+        <td width="150">
+            <p><font face="Arial">München</font></p>
+        </td>
+        <td width="550">
+            <p><font face="Arial">Iteration Execution Manager, RUP-Coach</font></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="200">
+            <p><font face="Arial"><span style="font-size:12pt;">Partner Consult</span></font></p>
+        </td>
+        <td width="150">
+            <p><font face="Arial"><span style="font-size:12pt;">Hamburg</span></font></p>
+        </td>
+        <td width="550">
+            <p><font face="Arial"><span style="font-size:12pt;">Gesamt-Projektleitung, 
+            Krisenmanagement</span></font></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="200">
+            <p><font face="Arial"><span style="font-size:12pt;">Quelle Versicherungen 
+            AG</span></font></p>
+        </td>
+        <td width="150">
+            <p><font face="Arial"><span style="font-size:12pt;">Fürth</span></font></p>
+        </td>
+        <td width="550">
+            <p><font face="Arial"><span style="font-size:12pt;">Leitung der 
+            Qualitätssicherung eines Projekts</span></font></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="200">
+            <p><font face="Arial"><span style="font-size:12pt;">SEL AG</span></font></p>
+        </td>
+        <td width="150">
+            <p><font face="Arial"><span style="font-size:12pt;">Stuttgart</span></font></p>
+        </td>
+        <td width="550">
+            <p><font face="Arial"><span style="font-size:12pt;">Projektleitung, 
+            System Management</span></font></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="200">
+            <p><font face="Arial"><span style="font-size:12pt;">Sequent Computer 
+           Systems  GmbH</span></font></p>
+        </td>
+        <td width="150">
+            <p><font face="Arial"><span style="font-size:12pt;">Neuss, Bonn</span></font></p>
+        </td>
+        <td width="550">
+            <p><font face="Arial"><span style="font-size:12pt;">Projektleitung, 
+            Krisenmanagement</span></font></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="200">
+            <p><font face="Arial"><span style="font-size:12pt;">SPI GmbH</span></font></p>
+        </td>
+        <td width="150">
+            <p><font face="Arial"><span style="font-size:12pt;">Hamburg</span></font></p>
+        </td>
+        <td width="550">
+            <p><font face="Arial"><span style="font-size:12pt;">Handbuch-Übersetzungen</span></font></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="200">
+            <p><font face="Arial"><span style="font-size:12pt;">Sharp GmbH</span></font></p>
+        </td>
+        <td width="150">
+            <p><font face="Arial"><span style="font-size:12pt;">Hamburg</span></font></p>
+        </td>
+        <td width="550">
+            <p><font face="Arial"><span style="font-size:12pt;">Systemhaus (Softwareerstellung, 
+            Konzepterstellung, Systemanalyse)</span></font></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="200">
+            <p><font face="Arial">Siemens VDO</font></p>
+        </td>
+        <td width="150">
+            <p><font face="Arial">Regensburg</font></p>
+        </td>
+        <td width="550">
+            <p><font face="Arial">Reengineering, Dokumentation des Reengineerings, 
+            Unterstützung beim Requirements Management</font></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="200">
+            <p><font face="Arial">Siemens VDO</font></p>
+        </td>
+        <td width="150">
+            <p><font face="Arial">München</font></p>
+        </td>
+        <td width="550">
+            <p><font face="Arial">Qualitätsmanagement, unternehmensübergreifende 
+            Geschäftsprozeßeinführung, Unterstützung &nbsp;beim Requirementsmanagement</font></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="200">
+            <p><font face="Arial"><span style="font-size:12pt;">Texas Instruments 
+            GmbH</span></font></p>
+        </td>
+        <td width="150">
+            <p><font face="Arial"><span style="font-size:12pt;">Hamburg, Freising</span></font></p>
+        </td>
+        <td width="550">
+            <p><font face="Arial"><span style="font-size:12pt;">Softwareerstellung, 
+            Promotion, Anwendungsberatung</span></font></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="200">
+            <p><font face="Arial">T-Mobile GmbH</font></p>
+        </td>
+        <td width="150">
+            <p><font face="Arial">Bonn</font></p>
+        </td>
+        <td width="550">
+            <p><font face="Arial">Geschäftsprozess-Erstellung und Einführung</font></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="200">
+            <p><font face="Arial"><span style="font-size:12pt;">Unisys AG</span></font></p>
+        </td>
+        <td width="150">
+            <p><font face="Arial"><span style="font-size:12pt;">Sulzbach, Mumbai</span></font></p>
+        </td>
+        <td width="550">
+            <p><font face="Arial"><span style="font-size:12pt;">Qualitätsmanagement, 
+            Systemanalyse, Konzepterstellung</span></font></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="200">
+            <p><font face="Arial"><span style="font-size:12pt;">&nbsp;</span></font></p>
+        </td>
+        <td width="150">
+            <p><font face="Arial"><span style="font-size:12pt;">&nbsp;</span></font></p>
+        </td>
+        <td width="550">
+            <p><font face="Arial"><span style="font-size:12pt;">&nbsp;</span></font></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="200">
+            <p><font face="Arial"><span style="font-size:12pt;">&nbsp;</span></font></p>
+        </td>
+        <td width="150">
+            <p><font face="Arial"><span style="font-size:12pt;">&nbsp;</span></font></p>
+        </td>
+        <td width="550">
+            <p><font face="Arial"><span style="font-size:12pt;">&nbsp;</span></font></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="200">
+            <p><font face="Arial"><span style="font-size:12pt;">&nbsp;</span></font></p>
+        </td>
+        <td width="150">
+            <p><font face="Arial"><span style="font-size:12pt;">&nbsp;</span></font></p>
+        </td>
+        <td width="550">
+            <p><font face="Arial"><span style="font-size:12pt;">&nbsp;</span></font></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="200">
+            <p><font face="Arial"><span style="font-size:12pt;">&nbsp;</span></font></p>
+        </td>
+        <td width="150">
+            <p><font face="Arial"><span style="font-size:12pt;">&nbsp;</span></font></p>
+        </td>
+        <td width="550">
+            <p><font face="Arial"><span style="font-size:12pt;">&nbsp;</span></font></p>
+        </td>
+    </tr>
+</table>
+<p><font face="Arial"><span style="font-size:12pt;">&nbsp;</span></font></p>
+</body>
+
+</html>
